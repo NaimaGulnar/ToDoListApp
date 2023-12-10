@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to top, rgb(166, 144, 88), rgb(226, 239, 170));
+  font-family: cursive;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.header {
+  padding: 1rem 3rem;
+  box-shadow: 0 3px 10px 0 black;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.container {
+  margin: 5rem auto;
+  width: 60%;
+  padding: 1rem 2rem;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+.input {
+  background: transparent;
+  width: 70%;
+  margin: 1rem 2rem 1rem 0;
+  height: 2.4rem;
+  border: 1px solid gray;
+  padding: 0.7rem;
+  outline: none;
+}
+.add {
+  padding: 0.6rem 0.8rem;
+  background: transparent;
+  box-shadow: 0 0 5px 0 black;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.add:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 0 0;
+}
+.listItems li {
+  width: 70%;
+  position: relative;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  list-style: none;
+}
+.delete {
+  padding: 0.2rem 0.4rem;
+  background: transparent;
+  border: none;
+  color: rgb(184, 2, 2);
+  transition: 0.3s;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+}
+.delete:hover {
+  cursor: pointer;
+  color: black;
+}
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 45%;
+  font-size: 0.8rem;
+  color: rgb(76, 75, 75);
+}
+
+@media (max-width: 912px) {
+  .header {
+    font-size: 0.8rem;
+  }
+  .container {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .inputContainer {
+    padding: 0 1rem;
+  }
+  .input {
+    width: 90%;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .add {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .listItems li {
+    width: 90%;
+  }
+}
